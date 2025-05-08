@@ -1,3 +1,5 @@
+// ignore_for_file: deprecated_member_use
+
 import 'dart:async';
 import 'dart:developer';
 import 'dart:io';
@@ -704,7 +706,7 @@ class _ScrollableTrimViewerState extends State<ScrollableTrimViewer>
                 child: Row(
                   children: [
                     Container(
-                      color: Colors.red.withValues(alpha: 0.6),
+                      color: Colors.red.withOpacity(0.6),
                       height: _thumbnailViewerH,
                       // 2% of total trimmer width
                       width: (_thumbnailViewerW == 0.0
@@ -714,7 +716,7 @@ class _ScrollableTrimViewerState extends State<ScrollableTrimViewer>
                     ),
                     const Spacer(),
                     Container(
-                      color: Colors.red.withValues(alpha: 0.6),
+                      color: Colors.red.withOpacity(0.6),
                       height: _thumbnailViewerH,
                       // 2% of total trimmer width
                       width: (_thumbnailViewerW == 0.0
